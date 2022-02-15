@@ -38,11 +38,11 @@ if((start == end+1) || (start+1 == end)){
 if((arr[middle] == search) || (arr[start] == arr[end]) || arr[end] == arr[middle] || arr[start] == arr[middle]){
     if(arr[middle] == search){
         cout << "Item is found" << endl;
-        return middle;
+        return arr[middle];
     }
     if(start == end || arr[middle] != search){
         cout << "item not found" << endl;
-        return end;
+        return arr[end];
     }
 }
 if(search < arr[middle] && start != end){
